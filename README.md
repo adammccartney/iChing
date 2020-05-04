@@ -44,9 +44,23 @@ it follows that:
 
 
 As there are already in existence many wonderful translations of this text,
-this program is not initially geared at their reproduction them, instead the
+this program is not initially geared at their reproduction, instead the
 idea is to use it to generate a hexagram for the reader. 
 
+There are at least two versions of the text which are worth finding. 
+I think most translations into European languages refer to the Richard Wilhelm
+version at one point or another. There is a good version of this version, with
+an introduction by Carl Jung that is widely available. 
+The other version that I would recommend is by Thomas Cleary, it iss published by
+Shambhala and seems to stick pretty close to the Taoist origins at the core of
+the text. So if you like experience to be brief and crispy, with a certain
+levity, of a different sort to that of say, the long-winded ramblings of Confuscious 
+or the music of Wagner, then the Cleary translation is for you! 
+The version with the introduction by Jung includes two versions of the text,
+one that is fairly bare bones and tries to stick to the taoist way of doing
+things and the another that includes the Confucian commentary. Also there are
+some really good appendixes in this one that go into detail about the nature of
+the system used to create readings. 
 
 
 # Initial commit 
