@@ -70,10 +70,6 @@ class Hexagram(object):
                 line = "-o-\n"
                 hexImage += line
         return print(hexImage)
-
-def giveReading(hexagram):
-    """assumes hexagram is an instance"""
-    hexagram.setLineValues(self)
     hexagram.getLineValues(self)
 
 
