@@ -76,7 +76,7 @@ myQuestion.printReading()
 
 ```
 
-will return a very simple graphical representation (in chars) to the console. 
+will return a very simple graphical representation (of chars) to the console. 
 
 
 
