@@ -8,15 +8,21 @@ def flip(numFlips):
             heads += 1
     return heads
 
-def genLine(numLine):
+
+"""
+Enum class for the different line types 
+"""
+from enum import Enum
+
+class Line(Enum):
+    yinChange = 6
+    yangUnchange = 7
+    yinUnchange = 8 
+    yangChange = 9
+
+def generateLineValue(numLine):
     """
     Generates a hexagram line
-    H = 3
-    T = 2
-    HHH = 9
-    HHT = 8
-    HTT = 7
-    TTT = 6:
     """
     lineValue = 0
     flipsPerLine = 3
@@ -25,24 +31,23 @@ def genLine(numLine):
     if 4 <= numHeads <= 0:
         return 'Error: lineValue outside range '
     elif numHeads == 0:
-        lineValue = 6
+        return Line.yinChange
     elif numHeads == 1: 
-        lineValue = 7
+        return Line.yangUnchange
     elif numHeads == 2:
-        lineValue = 8
+        return Line.yinUnchange
     elif numHeads == 3:
-        lineValue = 9
+        return Line.yangChange
 
-    return lineValue
 
 class Hexagram(object):
 
-    def __init__(self, lines=(1,2,3,4,5,6), lineValues=[]):
+    def __init__(self, linePositions=(1,2,3,4,5,6), lineValues=[]):
         """Creates empty hexagram"""
-        self.lines = lines
+        self.linePositions = linePositions
         self.lineValues = lineValues
-        for line in self.lines:
-            self.lineValues.append(genLine(line))
+        for linePosition in self.linePositions:
+            self.lineValues.append(generateLineValue(linePosition))
 
     def getLineValues(self):
         return self.lineValues
@@ -70,7 +75,6 @@ class Hexagram(object):
                 line = "-o-\n"
                 hexImage += line
         return print(hexImage)
-    hexagram.getLineValues(self)
 
 
 
