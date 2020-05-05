@@ -52,29 +52,5 @@ class Hexagram(object):
     def getLineValues(self):
         return self.lineValues
 
-    def printReading(self):
-        """ returns a six line string 
-            that graphs the line values of the hex
-            """ 
-        #print(self.lineValues)
-        hexCopy = self.lineValues[:]
-        hexCopy.reverse()
-        #print(hexCopy)
-        hexImage = ""
-        for lineValue in hexCopy:
-            if lineValue == 6:
-                line = "-x-\n"
-                hexImage += line
-            elif lineValue == 7:
-                line = "---\n"
-                hexImage += line
-            elif lineValue == 8:
-                line = "- -\n"
-                hexImage += line
-            elif lineValue == 9:
-                line = "-o-\n"
-                hexImage += line
-        return print(hexImage)
-
 
 
