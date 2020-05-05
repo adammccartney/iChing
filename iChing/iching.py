@@ -39,7 +39,6 @@ def generateLineValue(numLine):
     elif numHeads == 3:
         return Line.yangChange
 
-
 class Hexagram(object):
 
     def __init__(self, linePositions=(1,2,3,4,5,6), lineValues=[]):
