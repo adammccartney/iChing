@@ -4,6 +4,15 @@
 v0.1 
 See git tag for date
 
+10.5.2020
+Second Update
+
+Refactored and extended hexagram class 
+
+ToDo: 
+ + Write generator function for self.printHexImage() in Hexagram class.
+
+
 5.5.2020
 First update
 
