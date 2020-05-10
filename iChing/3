@@ -83,17 +83,14 @@ class Hexagram(object):
 
     def printHexImage(self):
         """Returns set hexagram"""
-        listToStr = ''.join([str(line) for line in self.hexImage])
-        print(listToStr[:3])
-        print(listToStr[3:6])
-        print(listToStr[6:9])
-        print(listToStr[-9:-6])
-        print(listToStr[-6:-3])
-        print(listToStr[-3:])
-            
+        viewLine = ""
+        for line in self.hexImage:
+            viewLine += line
+            print(viewLine)
+            viewLine = ""
 
 
-if __name__ == '__main__':
+def if __name__ == '__main__':
     test = Hexagram()
     test.setHexImage()
     test.printHexImage()
