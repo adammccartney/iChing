@@ -63,6 +63,14 @@ some really good appendixes in this one that go into detail about the nature of
 the system used to create readings. 
 
 
+## Update002
+10.5.2020
+Second Update
+
+Refactored and extended hexagram class 
+
+
+
 ## Update001 
 5.5.2020
 Added an enum class to iching.py 
@@ -79,8 +87,8 @@ myQuestion.getLinevalues()
 ```
 ### To Do 
 
-
- + implement a function to return a visual depiction of the cast hexagram
+ + Write generator function for self.printHexImage() in Hexagram class.
+ + ~implement a function to return a visual depiction of the cast hexagram~
  + implement a test to check that the lineValues are being mapped to the
    right linePositions 
  + implement a command line interface to ask question and use it as an instance
