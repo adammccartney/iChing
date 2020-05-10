@@ -1,4 +1,10 @@
 import random
+from enum import Enum
+
+"""
+iChing.py calculates a hexagram based on coin flips
+"""
+
 
 def flip(numFlips):
     """Assums numFlips is a positive int"""
@@ -12,7 +18,6 @@ def flip(numFlips):
 """
 Enum class for the different line types 
 """
-from enum import Enum
 
 class Line(Enum):
     yinChange = 6
@@ -46,10 +51,14 @@ class Hexagram(object):
         self.linePositions = linePositions
         self.lineValues = lineValues
         for linePosition in self.linePositions:
-            self.lineValues.append(generateLineValue(linePosition))
+            lineValue = generateLineValue(linePosition)
+            self.lineValues.append(lineValue)
 
     def getLineValues(self):
         return self.lineValues
+
+    def clearLineValues(self):
+        self.lineValues = []
 
 
 
