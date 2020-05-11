@@ -19,10 +19,9 @@ def flip(numFlips):
 
 
 class Line(Enum):
-     """Enum class for the different line types
+    """Enum class for the different line types
      
-     """
-    
+    """
     yinChange = 6
     yangUnchange = 7
     yinUnchange = 8 
@@ -78,7 +77,6 @@ class Hexagram(object):
         """
         
         self.castLines = []
-
 
     def setHexImage(self):
         """Make simple image of hexagram
