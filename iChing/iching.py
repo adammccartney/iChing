@@ -88,7 +88,7 @@ class Hexagram(object):
 
         for line in self.castLines:
             if line.value == 6:
-                changingYinLine = "-x-"
+                changingYinLine = "-o-"
                 self.hexImage += changingYinLine
             if line.value == 7:
                 yangLine = "---"
@@ -97,7 +97,7 @@ class Hexagram(object):
                 yinLine = "- -"
                 self.hexImage += yinLine
             if line.value == 9:
-                changingYangLine = "-o-"
+                changingYangLine = "-x-"
                 self.hexImage += changingYangLine
 
     def printHexImage(self):
