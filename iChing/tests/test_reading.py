@@ -1,7 +1,7 @@
-import iching 
+import iChing
 
 def test_reading():
-    test = iching.Hexagram()
+    test = iChing.Hexagram()
     test.setHexImage()
     reading = test.printHexImage()
     return reading

@@ -1,1 +1,10 @@
-scipy==1.4.1
+numpy
+scipy
+matplotlib
+ipython
+jupyter
+pandas
+sympy
+nose
+PyQt5==5.14.0
+PyQt5-sip

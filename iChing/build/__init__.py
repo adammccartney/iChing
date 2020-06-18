@@ -1,1 +1,6 @@
-from .iching import *
+from .iching import (
+        flip,
+        Line,
+        setLine,
+        Hexagram,
+        )
