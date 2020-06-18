@@ -87,7 +87,7 @@ myQuestion.getLinevalues()
 ```
 ### To Do 
 
- + Write generator function for self.printHexImage() in Hexagram class.
+ + ~write generator function for self.printHexImage() in Hexagram class~
  + ~implement a function to return a visual depiction of the cast hexagram~
  + implement a test to check that the lineValues are being mapped to the
    right linePositions 
