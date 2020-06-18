@@ -1,1 +1,1 @@
-from iching import *
+from iChing.build import *
