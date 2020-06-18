@@ -1,5 +1,14 @@
-# setup.py
-from distutils.core import setup
+#!/usr/bin/env python
+import setuptools 
+
+install_requires = [
+        "numpy",
+        "scipy",
+        "ipython",
+        "jupyter",
+        "mypy",
+        "pytest",
+        ]
 
 keywords = [
         "i ching",
