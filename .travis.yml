@@ -36,7 +36,7 @@ install:
 
 script:
     - mypy $TRAVIS_BUILD_DIR/$name
-    - py.test -rf $TRAVIS_BUILD_DIR/$name/test_reading.py
+    - py.test -rf $TRAVIS_BUILD_DIR/$name/tests/test_reading.py
 
 notifications:
     email: false
