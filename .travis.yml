@@ -7,13 +7,10 @@ git:
     depth: false
 
 before_install:
-    # name working directory 
-    - LOCATION=`pwd`
-
     # alias package
-    - PACKAGE=`pwd`/iChing
-    - export PYTHONPATH=$PACKAGE:$PYTHONPATH
-    - export PATH=$PACKAGE/scr/:$PATH
+    - name=`basename $TRAVIS_BUILD_DIR`
+    - package=$TRAVIS_BUILD_DIR/$name
+    - export PYTHONPATH=$package:$PYTHONPATH
 
     # upgrade pip 
     - pip install --upgrade pip
@@ -23,6 +20,9 @@ before_install:
 
     # install isort 
     - pip install isort
+
+    # install mypy 
+    - pip install mypy 
 
     # log setup 
     - echo $PATH
