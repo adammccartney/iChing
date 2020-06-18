@@ -63,9 +63,7 @@ some really good appendixes in this one that go into detail about the nature of
 the system used to create readings. 
 
 
-###Usage
-
-
+### Usage
 
 ```python
 
