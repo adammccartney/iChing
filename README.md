@@ -1,6 +1,6 @@
 ## iChing readme
 ----------------
-
+[![Build Status](https://travis-ci.org/adammccartney/iChing.svg?branch=master)](https://travis-ci.org/adammccartney/iChing)
 # Possibilities
 
 Okay, so this is a small project to practice using some developer tools before
